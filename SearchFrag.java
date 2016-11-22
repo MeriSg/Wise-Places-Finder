@@ -503,10 +503,9 @@ public class SearchFrag extends Fragment {
                         searchAround();
                     }else if (radius.equals("3000")){
                         savestate.putString("radius",cRadius).apply();
-                        loop=false;
-                    }else {
                         myActivity.showSnackBar("noresults");
                         showPastSearch();
+                        loop=false;
                     }
                 }
 
